@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         gameForm = new GameForm();
-        TopScores.addPreviousScoresToList();
+        TopScore.addPreviousScoresToList();
         startGame();
     }
 
@@ -21,8 +21,8 @@ public class Main {
             clearWindowAfterPreviousGame();
             Countdown.startCountdown(gameForm);
             waitForGameToFinish();
-            TopScores.saveCurrentScore(); // Should be not static
-            TopScores.writeScores();
+            TopScore.saveCurrentScore(); // Should be not static
+            TopScore.writeScores();
         }
         System.exit(0);
     }
@@ -52,7 +52,7 @@ public class Main {
     private static boolean userWantsToStartGame() {
         int choice = generateLetterAndShowMenu();
         if (choice == 2)
-            TopScores.showScores(gameForm);
+            TopScore.showScores(gameForm);
         if (choice == 1 || choice == 2)
             return userWantsToStartGame();
 

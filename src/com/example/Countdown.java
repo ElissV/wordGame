@@ -5,14 +5,14 @@ import com.example.gui.GameForm;
 import java.util.Timer;
 import java.util.TimerTask;
 
-abstract class Countdown {
+class Countdown {
 
-    private final static int timeTotal = 30;
+    private final static int TIMETOTAL = 30;
     private static int timeLeft;
 
     static void startCountdown(GameForm gameForm) {
+        timeLeft = TIMETOTAL;
         changeTimeLeftLabel(gameForm);
-        timeLeft = timeTotal;
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
@@ -32,7 +32,7 @@ abstract class Countdown {
     }
 
     static int getTimeTotal() {
-        return timeTotal;
+        return TIMETOTAL;
     }
 
 }

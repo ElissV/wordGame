@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 
-abstract class TopScores {
+abstract class TopScore {
 
     private static ArrayList<Integer> topScores;
     private static String filePath;
