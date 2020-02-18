@@ -34,4 +34,5 @@ abstract class Countdown {
     static int getTimeTotal() {
         return timeTotal;
     }
+
 }

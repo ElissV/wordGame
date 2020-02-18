@@ -43,7 +43,7 @@ public class GameForm {
         timeLeftLabel.setFont(labelFont);
         scoreLabel.setFont(labelFont);
         scoreLabel.setMinimumSize(labelDimension);
-        contentPane.add(splitPane, BorderLayout.NORTH);             // splitPane contains scoreLabel and timeLeftLabel
+        contentPane.add(splitPane, BorderLayout.NORTH);
 
         answerInputField.addActionListener(answerSubmittingAction);
         contentPane.add(answerInputField, BorderLayout.CENTER);
@@ -74,16 +74,21 @@ public class GameForm {
         textArea.setText(answer + "\n" + output);
     }
 
-    public void startOver() {
-        scoreLabel.setText("Score: 0");
-        textArea.setText("");
-        answerInputField.setText("");
-    }
-
     public JFrame getJFrame() { return jFrame; }
 
     public JLabel getTimeLeftLabel() {
         return timeLeftLabel;
     }
 
+    public JTextField getAnswerInputField() {
+        return answerInputField;
+    }
+
+    public JLabel getScoreLabel() {
+        return scoreLabel;
+    }
+
+    public JTextArea getTextArea() {
+        return textArea;
+    }
 }
