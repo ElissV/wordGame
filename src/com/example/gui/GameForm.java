@@ -61,7 +61,7 @@ public class GameForm {
                     () -> {
                         String answer = answerInputField.getText();
                         updateAfterAnswerSubmitting(answer);
-                        WordCheck.checkForCorrectAnswer(answer);
+                        new WordCheck().checkForCorrectAnswer(answer);
                         String score = String.valueOf(new Score().getScore());
                         scoreLabel.setText("Score: " + score);
                     };

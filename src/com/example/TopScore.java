@@ -54,7 +54,7 @@ abstract class TopScore {
     }
 
     static void saveCurrentScore() {
-        int currentScore = WordCheck.getScore();
+        int currentScore = new Score().getScore();
         if (currentScore == 0) {
             topScores.add(currentScore);
         } else {

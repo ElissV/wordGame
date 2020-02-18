@@ -4,31 +4,39 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 
 public class WordCheck {
 
-    private static ArrayList<String> givenAnswers;
+    private static List<String> givenAnswers;
     private static Score score;
 
     static {
+        givenAnswers = new ArrayList<>();
         score = new Score();
     }
 
-    public static void checkForCorrectAnswer(String word)
+    public void checkForCorrectAnswer(String word)
     {
-        if (word.isEmpty() || word.length() == 1) return;
-        char firstLetter = Character.toUpperCase(word.charAt(0));
-        char chosenChar = RandomLetterGenerator.getLetter();
-        if (firstLetter == chosenChar) {
-            if (checkIfWordExists(word) && !(givenAnswers.contains(word))) {
-                givenAnswers.add(word);
-                score.setScore(word);
+        if (word.isEmpty() || word.length() == 1)
+            return;
+        if (wordStartsWithRightChar(word)) {
+            if (wordExists(word)) {
+                if (!(givenAnswers.contains(word))) {
+                    givenAnswers.add(word);
+                    score.setScore(word);
+                }
             }
         }
     }
 
-    private static boolean checkIfWordExists(String word)
-    {
+    private boolean wordStartsWithRightChar(String word) {
+        char firstLetter = Character.toUpperCase(word.charAt(0));
+        char chosenChar = RandomLetterGenerator.getLetter();
+        return firstLetter == chosenChar;
+    }
+
+    private boolean wordExists(String word) {
         int response = 0;
         try {
             String stringURL = "https://od-api.oxforddictionaries.com/api/v2/entries/en-us/" + word;
@@ -42,7 +50,7 @@ public class WordCheck {
             response = connection.getResponseCode();
 
         } catch (IOException e) {
-            System.out.println("An exception was thrown: " + e);
+            System.out.println("An issue occurred: " + e);
         }
         return response == 200;
     }
