@@ -21,7 +21,7 @@ public class Main {
             clearWindowAfterPreviousGame();
             Countdown.startCountdown(gameForm);
             waitForGameToFinish();
-            TopScore.saveCurrentScore(); // Should be not static
+            new TopScore().saveCurrentScore();
             new ScoreWriter().writeScores();
         }
         System.exit(0);

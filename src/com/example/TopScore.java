@@ -24,7 +24,7 @@ class TopScore {
         JOptionPane.showMessageDialog(gameForm.getJFrame(), scores, "Scores", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    static void saveCurrentScore() {
+    void saveCurrentScore() {
         int currentScore = new Score().getScore();
         if (currentScore == 0) {
             topScores.add(currentScore);
@@ -33,7 +33,7 @@ class TopScore {
             Collections.sort(topScores);
             Collections.reverse(topScores);
             int lastElementIndex = topScores.size() - 1;
-            if (topScores.size() > lastElementIndex) {
+            if (5 < lastElementIndex) {
                 topScores.remove(lastElementIndex);
             }
         }
@@ -42,4 +42,5 @@ class TopScore {
     ArrayList<Integer> getTopScores() {
         return topScores;
     }
+
 }
