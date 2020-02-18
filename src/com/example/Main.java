@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         gameForm = new GameForm();
-        TopScore.addPreviousScoresToList();
+        ScoreReader.addPreviousScoresToList();
         startGame();
     }
 
@@ -22,7 +22,7 @@ public class Main {
             Countdown.startCountdown(gameForm);
             waitForGameToFinish();
             TopScore.saveCurrentScore(); // Should be not static
-            TopScore.writeScores();
+            new ScoreWriter().writeScores();
         }
         System.exit(0);
     }
