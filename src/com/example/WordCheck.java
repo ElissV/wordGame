@@ -7,8 +7,12 @@ import java.util.ArrayList;
 
 public class WordCheck {
 
-    private static int score = 0;
-    private static ArrayList<String> givenAnswers = new ArrayList<>();
+    private static ArrayList<String> givenAnswers;
+    private static Score score;
+
+    static {
+        score = new Score();
+    }
 
     public static void checkForCorrectAnswer(String word)
     {
@@ -18,7 +22,7 @@ public class WordCheck {
         if (firstLetter == chosenChar) {
             if (checkIfWordExists(word) && !(givenAnswers.contains(word))) {
                 givenAnswers.add(word);
-                score += calculateScore(word);
+                score.setScore(word);
             }
         }
     }
@@ -43,18 +47,8 @@ public class WordCheck {
         return response == 200;
     }
 
-    private static int calculateScore(String word) {
-        short scorePerLetter = 50;
-        return scorePerLetter * word.length();
-    }
-
-    static void clearScore() {
-        score = 0;
+    void clearGivenAnswers() {
         givenAnswers.clear();
-    }
-
-    public static int getScore() {
-        return score;
     }
 
 }

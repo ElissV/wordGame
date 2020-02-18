@@ -35,7 +35,7 @@ public class Main {
     }
 
     private static void clearWindowAfterPreviousGame() {
-        WordCheck.clearScore();
+        new Score().clearScore();
         startOver();
     }
 
@@ -72,5 +72,5 @@ public class Main {
         gameForm.getTextArea().setText("");
         gameForm.getAnswerInputField().setText("");
     }
-    
+
 }
