@@ -8,14 +8,14 @@ import java.util.List;
 
 class ScoreWriter {
 
-    private static File file;
+    private static final File file;
 
     static {
         String filePath = "resources/scores.txt";
         file = new File(filePath);
     }
 
-    void writeScores() {
+    static void writeScores() {
         List<Integer> topScores = new TopScore().getTopScores();
         try (Writer writer = new FileWriter(file, false)) {
             for (int i : topScores) {

@@ -7,9 +7,17 @@ import javax.swing.*;
 public class Main {
 
     private static GameForm gameForm;
+    private static WordCheck wordCheck;
+    private static Level level;
+    private static Score score;
+
+    static {
+        gameForm = new GameForm();
+        wordCheck = new WordCheck();
+        score = new Score();
+    }
 
     public static void main(String[] args) {
-        gameForm = new GameForm();
         ScoreReader.addPreviousScoresToList();
         startGame();
     }
@@ -18,11 +26,11 @@ public class Main {
         showRules();
         while (userWantsToStartGame())
         {
-            clearWindowAfterPreviousGame();
+            startOver();
             Countdown.startCountdown(gameForm);
             waitForGameToFinish();
             new TopScore().saveCurrentScore();
-            new ScoreWriter().writeScores();
+            ScoreWriter.writeScores();
         }
         System.exit(0);
     }
@@ -30,13 +38,8 @@ public class Main {
     private static void showRules() {
         int timeTotal = Countdown.getTimeTotal();
         String rules = "Hi!\n The rules of the game are simple: you have to write as many words as you can within "
-                + timeTotal + " seconds.\n Your words have to begin with a certain letter.";
+                + timeTotal + " seconds.\n Your words have to begin with a certain letter(s).";
         JOptionPane.showMessageDialog(gameForm.getJFrame(), rules);
-    }
-
-    private static void clearWindowAfterPreviousGame() {
-        new Score().clearScore();
-        startOver();
     }
 
     private static void waitForGameToFinish() {
@@ -61,16 +64,24 @@ public class Main {
 
     private static int generateLetterAndShowMenu() {
         char letter = RandomLetterGenerator.generateLetter();
-        String message = "Start the game? \nThe letter is " + letter;
-        String[] options = {"Yes", "Change letter", "Show scores", "No"};
+        String message = "Start the game? \nWords should start with " + letter;
+        String[] options = {"Yes", "Change letter(s)", "Show scores", "No"};
         return JOptionPane.showOptionDialog(gameForm.getJFrame(), message, "Word Game",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
     }
 
     private static void startOver() {
+        score = new Score();
         gameForm.getScoreLabel().setText("Score: 0");
         gameForm.getTextArea().setText("");
         gameForm.getAnswerInputField().setText("");
     }
 
+    public static Score getCurrentScore() {
+        return score;
+    }
+
+    public static WordCheck getWordCheck() {
+        return wordCheck;
+    }
 }

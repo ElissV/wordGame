@@ -8,22 +8,20 @@ import java.util.List;
 
 public class WordCheck {
 
-    private static List<String> givenAnswers;
-    private static Score score;
+    private List<String> givenAnswers;
 
-    static {
+    WordCheck() {
         givenAnswers = new ArrayList<>();
-        score = new Score();
     }
 
-    public void checkForCorrectAnswer(String word)
-    {
+    public void checkForCorrectAnswer(String word) {
         if (word.isEmpty() || word.length() == 1)
             return;
         if (wordStartsWithRightChar(word)) {
             if (wordExists(word)) {
                 if (!(givenAnswers.contains(word))) {
                     givenAnswers.add(word);
+                    Score score = Main.getCurrentScore();
                     score.setScore(word);
                 }
             }

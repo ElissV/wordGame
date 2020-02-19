@@ -1,5 +1,6 @@
 package com.example.gui;
 
+import com.example.Main;
 import com.example.Score;
 import com.example.WordCheck;
 
@@ -46,33 +47,36 @@ public class GameForm {
         scoreLabel.setMinimumSize(labelDimension);
         contentPane.add(splitPane, BorderLayout.NORTH);
 
-        answerInputField.addActionListener(answerSubmittingAction);
+        InputCheck inputCheck = new InputCheck();
+        answerInputField.addActionListener(inputCheck.answerSubmittingAction);
         contentPane.add(answerInputField, BorderLayout.CENTER);
         textArea.setPreferredSize(textAreaDimension);
         contentPane.add(textArea, BorderLayout.PAGE_END);
     }
 
-    private Action answerSubmittingAction = new AbstractAction()
-    {
-        @Override
-        public void actionPerformed(ActionEvent e)
-        {
-            Runnable inputHandlerRunnable =
-                    () -> {
-                        String answer = answerInputField.getText();
-                        updateAfterAnswerSubmitting(answer);
-                        new WordCheck().checkForCorrectAnswer(answer);
-                        String score = String.valueOf(new Score().getScore());
-                        scoreLabel.setText("Score: " + score);
-                    };
-            new Thread(inputHandlerRunnable).start();
-        }
-    };
+    private class InputCheck {
 
-    private void updateAfterAnswerSubmitting(String answer) {
-        answerInputField.setText("");
-        String output = textArea.getText();
-        textArea.setText(answer + "\n" + output);
+        Action answerSubmittingAction = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Runnable inputHandlerRunnable =
+                        () -> {
+                            String answer = answerInputField.getText();
+                            updateAfterAnswerSubmitting(answer);
+                            WordCheck wordCheck = Main.getWordCheck();
+                            wordCheck.checkForCorrectAnswer(answer);
+                            scoreLabel.setText("Score: " + Main.getCurrentScore());
+                        };
+                new Thread(inputHandlerRunnable).start();
+            }
+        };
+
+        private void updateAfterAnswerSubmitting(String answer) {
+            answerInputField.setText("");
+            String output = textArea.getText();
+            textArea.setText(answer + "\n" + output);
+        }
+
     }
 
     public JFrame getJFrame() { return jFrame; }

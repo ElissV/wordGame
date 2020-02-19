@@ -6,9 +6,9 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class ScoreReader {
+class ScoreReader {
 
-    private static String filePath;
+    private static final String filePath;
 
     static {
         filePath = "resources/scores.txt";

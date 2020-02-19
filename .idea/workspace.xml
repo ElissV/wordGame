@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="131dce44-fb31-493a-b135-471b096b3019" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/example/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scores.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/Countdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Countdown.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/TopScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/TopScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/ScoreReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/ScoreReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/ScoreWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/ScoreWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/WordCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/WordCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/gui/GameForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/gui/GameForm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,10 +43,13 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="501">
+              <caret line="83" column="44" lean-forward="true" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2486#2487#0" expanded="true" />
+                <element signature="e#2514#2515#0" expanded="true" />
+                <element signature="e#2689#2690#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,18 +58,16 @@
       <file leaf-file-name="TopScore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/TopScore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="416">
               <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1566#1567#0" expanded="true" />
-                <element signature="e#1598#1599#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Countdown.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Countdown.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Countdown.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -73,37 +79,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreWriter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/ScoreWriter.java">
+      <file leaf-file-name="Score.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/Score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/ScoreReader.java">
+      <file leaf-file-name="Level.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/gui/GameForm.java">
+      <file leaf-file-name="RandomLetterGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+            <state relative-caret-position="442">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordCheck.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/WordCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,18 +164,21 @@
         <option value="$PROJECT_DIR$/src/com/example/gui/GameForm.form" />
         <option value="$PROJECT_DIR$/src/com/example/HttpRequest.java" />
         <option value="$PROJECT_DIR$/src/com/example/TopScores.java" />
-        <option value="$PROJECT_DIR$/resources/scores.txt" />
         <option value="$PROJECT_DIR$/src/com/example/GameLauncher.java" />
-        <option value="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" />
-        <option value="$PROJECT_DIR$/src/com/example/Score.java" />
-        <option value="$PROJECT_DIR$/src/com/example/gui/GameForm.java" />
-        <option value="$PROJECT_DIR$/src/com/example/WordCheck.java" />
         <option value="$PROJECT_DIR$/src/com/example/FileReader.java" />
         <option value="$PROJECT_DIR$/src/com/example/FileWriter.java" />
-        <option value="$PROJECT_DIR$/src/com/example/ScoreWriter.java" />
-        <option value="$PROJECT_DIR$/src/com/example/Main.java" />
         <option value="$PROJECT_DIR$/src/com/example/TopScore.java" />
         <option value="$PROJECT_DIR$/src/com/example/Countdown.java" />
+        <option value="$PROJECT_DIR$/resources/scores.txt" />
+        <option value="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/example/Level.java" />
+        <option value="$PROJECT_DIR$/src/com/example/ScoreReader.java" />
+        <option value="$PROJECT_DIR$/src/com/example/ScoreWriter.java" />
+        <option value="$PROJECT_DIR$/src/com/example/InputCheck.java" />
+        <option value="$PROJECT_DIR$/src/com/example/Score.java" />
+        <option value="$PROJECT_DIR$/src/com/example/gui/GameForm.java" />
+        <option value="$PROJECT_DIR$/src/com/example/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/example/WordCheck.java" />
       </list>
     </option>
   </component>
@@ -190,15 +208,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="wordGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="wordGame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wordGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordGame" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wordGame" type="b2602c69:ProjectViewProjectNode" />
@@ -317,12 +340,15 @@
       <workItem from="1571946278230" duration="680000" />
       <workItem from="1571993763684" duration="624000" />
       <workItem from="1572431798195" duration="12843000" />
-      <workItem from="1582034610894" duration="8483000" />
+      <workItem from="1582034610894" duration="8734000" />
+      <workItem from="1582117726608" duration="15000" />
+      <workItem from="1582122792263" duration="12738000" />
+      <workItem from="1582144879411" duration="1503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184706000" />
+    <option name="totallyTimeSpent" value="199213000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,13 +373,12 @@
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3295302" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.36609685" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.36609685" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32905984" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20134228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20939597" />
       <window_info anchor="right" id="Database" order="6" weight="0.3295302" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info id="UI Designer" order="4" />
@@ -362,6 +387,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3988604" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3295302" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -372,8 +398,9 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info id="Designer" order="3" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.36609685" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3295302" />
       <window_info id="UI Designer" order="4" />
@@ -389,7 +416,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3295302" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20134228" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20939597" />
       <window_info anchor="right" id="Database" order="6" weight="0.3295302" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
@@ -397,7 +424,6 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3988604" />
     </layout-to-restore>
   </component>
@@ -417,20 +443,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/Countdown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/WordCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -451,8 +463,6 @@
           <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -471,8 +481,6 @@
           <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -521,8 +529,6 @@
           <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -556,8 +562,6 @@
           <caret line="11" column="80" lean-forward="true" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -617,99 +621,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/GameLauncher.java" />
     <entry file="file://$PROJECT_DIR$/resources/scores.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/GameLauncher.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/ScoreWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="289">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/WordCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
-            <element signature="e#2488#2489#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/InputCheck.java" />
     <entry file="file://$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/Score.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/gui/GameForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/ScoreReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/ScoreWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/TopScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -720,6 +667,61 @@
           <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/TopScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/ScoreReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="83" column="44" lean-forward="true" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2486#2487#0" expanded="true" />
+            <element signature="e#2514#2515#0" expanded="true" />
+            <element signature="e#2689#2690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/gui/GameForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/WordCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
           </folding>
         </state>
       </provider>

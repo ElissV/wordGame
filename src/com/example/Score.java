@@ -2,19 +2,23 @@ package com.example;
 
 public class Score {
 
-    private static int score = 0;
+    private int score;
+    private static final int[] pointsPerLetterForLevels;
+
+    static {
+        pointsPerLetterForLevels = new int[]{50, 100, 200};
+    }
+
+    Score() {
+        score = 0;
+    }
 
     private int calculateScore(String word) {
-        short scorePerLetter = 50;
+        int scorePerLetter = 10;
         return scorePerLetter * word.length();
     }
 
-    void clearScore() {
-        score = 0;
-        new WordCheck().clearGivenAnswers();
-    }
-
-    public int getScore() {
+    int getScore() {
         return score;
     }
 
@@ -22,4 +26,8 @@ public class Score {
         score += calculateScore(word);
     }
 
+    @Override
+    public String toString() {
+        return String.valueOf(score);
+    }
 }
