@@ -7,12 +7,14 @@ import javax.swing.*;
 public class Main {
 
     private static GameForm gameForm;
+    private static RandomLetterGenerator letterGenerator;
     private static WordCheck wordCheck;
     private static Level level;
     private static Score score;
 
     static {
         gameForm = new GameForm();
+        letterGenerator = new RandomLetterGenerator();
         wordCheck = new WordCheck();
         score = new Score();
     }
@@ -63,7 +65,7 @@ public class Main {
     }
 
     private static int generateLetterAndShowMenu() {
-        char letter = RandomLetterGenerator.generateLetter();
+        char letter = letterGenerator.generateLetter();
         String message = "Start the game? \nWords should start with " + letter;
         String[] options = {"Yes", "Change letter(s)", "Show scores", "No"};
         return JOptionPane.showOptionDialog(gameForm.getJFrame(), message, "Word Game",
