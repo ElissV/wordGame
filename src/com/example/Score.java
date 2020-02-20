@@ -9,17 +9,11 @@ public class Score {
         pointsPerLetterForLevels = new int[]{50, 100, 200};
     }
 
-    Score() {
-        score = 0;
-    }
+    Score() { score = 0; }
 
     private int calculateScore(String word) {
-        int scorePerLetter = 10;
-        return scorePerLetter * word.length();
-    }
-
-    int getScore() {
-        return score;
+        int level = Main.getLevel();
+        return word.length() * pointsPerLetterForLevels[level-1];
     }
 
     void setScore(String word) {
@@ -30,4 +24,9 @@ public class Score {
     public String toString() {
         return String.valueOf(score);
     }
+
+    int getScore() {
+        return score;
+    }
+
 }

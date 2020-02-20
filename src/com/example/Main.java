@@ -85,6 +85,8 @@ public class Main {
     }
 
     private static void startOver() {
+        wordCheck = new WordCheck();
+        level = new Level();
         score = new Score();
         clearFields();
     }
@@ -95,8 +97,12 @@ public class Main {
         gameForm.getAnswerInputField().setText("");
     }
 
-    public static Score getCurrentScore() {
+    public static Score getScore() {
         return score;
+    }
+
+    static int getLevel() {
+        return level.getCurrentLevel();
     }
 
     public static WordCheck getWordCheck() {

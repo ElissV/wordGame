@@ -21,7 +21,7 @@ public class WordCheck {
             if (wordExists(word)) {
                 if (!(givenAnswers.contains(word))) {
                     givenAnswers.add(word);
-                    Score score = Main.getCurrentScore();
+                    Score score = Main.getScore();
                     score.setScore(word);
                 }
             }

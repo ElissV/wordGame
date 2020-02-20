@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="131dce44-fb31-493a-b135-471b096b3019" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/ScoreReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/ScoreReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/ScoreWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/ScoreWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/TopScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/TopScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Score.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/WordCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/WordCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/gui/GameForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/gui/GameForm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,12 +37,14 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+            <state relative-caret-position="433">
+              <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3142#3143#0" expanded="true" />
                 <element signature="e#3170#3171#0" expanded="true" />
+                <element signature="e#3286#3287#0" expanded="true" />
+                <element signature="e#3314#3315#0" expanded="true" />
                 <element signature="e#3216#3217#0" expanded="true" />
                 <element signature="e#3248#3249#0" expanded="true" />
                 <element signature="e#3288#3289#0" expanded="true" />
@@ -104,24 +102,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Score.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Score.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/Score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Level.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="433">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding>
                 <element signature="e#222#223#0" expanded="true" />
                 <element signature="e#253#254#0" expanded="true" />
@@ -129,6 +131,8 @@
                 <element signature="e#456#457#0" expanded="true" />
                 <element signature="e#667#668#0" expanded="true" />
                 <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
                 <element signature="e#376#377#0" expanded="true" />
                 <element signature="e#411#412#0" expanded="true" />
                 <element signature="e#450#451#0" expanded="true" />
@@ -211,7 +215,6 @@
         <option value="$PROJECT_DIR$/src/com/example/Countdown.java" />
         <option value="$PROJECT_DIR$/resources/scores.txt" />
         <option value="$PROJECT_DIR$/src/com/example/InputCheck.java" />
-        <option value="$PROJECT_DIR$/src/com/example/Score.java" />
         <option value="$PROJECT_DIR$/src/com/example/gui/GameForm.java" />
         <option value="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/example/WordCheck.java" />
@@ -220,6 +223,7 @@
         <option value="$PROJECT_DIR$/src/com/example/ScoreWriter.java" />
         <option value="$PROJECT_DIR$/src/com/example/Level.java" />
         <option value="$PROJECT_DIR$/src/com/example/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/example/Score.java" />
       </list>
     </option>
   </component>
@@ -378,12 +382,12 @@
       <workItem from="1582117726608" duration="15000" />
       <workItem from="1582122792263" duration="12738000" />
       <workItem from="1582144879411" duration="2961000" />
-      <workItem from="1582193782083" duration="5558000" />
+      <workItem from="1582193782083" duration="6074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206229000" />
+    <option name="totallyTimeSpent" value="206745000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,7 +416,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32905984" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21208054" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21208054" />
       <window_info anchor="right" id="Database" order="6" weight="0.3295302" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -671,17 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/Score.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/gui/GameForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -724,6 +717,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/ScoreWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
@@ -735,24 +759,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/ScoreWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+        <state relative-caret-position="433">
+          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3142#3143#0" expanded="true" />
             <element signature="e#3170#3171#0" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3314#3315#0" expanded="true" />
             <element signature="e#3216#3217#0" expanded="true" />
             <element signature="e#3248#3249#0" expanded="true" />
             <element signature="e#3288#3289#0" expanded="true" />
@@ -761,21 +777,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/Score.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
           </folding>
         </state>
       </provider>

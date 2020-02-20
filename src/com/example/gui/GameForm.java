@@ -1,7 +1,6 @@
 package com.example.gui;
 
 import com.example.Main;
-import com.example.Score;
 import com.example.WordCheck;
 
 import javax.swing.*;
@@ -65,7 +64,7 @@ public class GameForm {
                             updateAfterAnswerSubmitting(answer);
                             WordCheck wordCheck = Main.getWordCheck();
                             wordCheck.checkForCorrectAnswer(answer);
-                            scoreLabel.setText("Score: " + Main.getCurrentScore());
+                            scoreLabel.setText("Score: " + Main.getScore());
                         };
                 new Thread(inputHandlerRunnable).start();
             }
