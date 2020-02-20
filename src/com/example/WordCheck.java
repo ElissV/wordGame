@@ -29,9 +29,15 @@ public class WordCheck {
     }
 
     private boolean wordStartsWithRightChar(String word) {
-        String firstLetter = String.valueOf(word.charAt(0)).toUpperCase();
+        String inputFistLetters = getFirstChars(word);
         String chosenLetters = Main.getChosenLetters();
-        return firstLetter.equals(chosenLetters);
+        System.out.println(inputFistLetters + "  " + chosenLetters);
+        return inputFistLetters.equals(chosenLetters);
+    }
+
+    private String getFirstChars(String word) {
+        int level = Main.getLevel();
+        return word.substring(0, level).toUpperCase();
     }
 
     private boolean wordExists(String word) {
@@ -53,8 +59,7 @@ public class WordCheck {
         return response == 200;
     }
 
-    void clearGivenAnswers() {
-        givenAnswers.clear();
+    public List<String> getGivenAnswers() {
+        return givenAnswers;
     }
-
 }

@@ -30,7 +30,7 @@ public class Main {
         showRules();
         while (userWantsToStartGame())
         {
-            startOver();
+            System.out.println(wordCheck.getGivenAnswers() + "\n" + level + "\n" + score);
             Countdown.startCountdown(gameForm);
             waitForGameToFinish();
             checkResultAndSaveIfFinished();
@@ -68,10 +68,14 @@ public class Main {
     private static void checkResultAndSaveIfFinished() {
         if (level.levelPassed(score)) {
             level.levelUp();
+            gameForm.getTextArea().setText("");
+            gameForm.getAnswerInputField().setText("");
+            wordCheck = new WordCheck();
         }
         if (level.gameIsFinished(score) || !level.levelPassed(score)) {
             topScore.saveCurrentScore();
             ScoreWriter.writeScores(topScore);
+            startOver();
         }
     }
 

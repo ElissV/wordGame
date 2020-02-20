@@ -19,7 +19,7 @@ class Level {
         return score.getScore() >= requiredScoreToPassALevel[currentLevel-1];
     }
 
-    public boolean gameIsFinished(Score score) {
+    boolean gameIsFinished(Score score) {
         boolean currentLevelIsFinal = currentLevel == MAX_LEVEL;
         return currentLevelIsFinal && levelPassed(score);
     }
