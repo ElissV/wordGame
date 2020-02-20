@@ -28,9 +28,7 @@ public class Main {
 
     private static void startGame() {
         showRules();
-        while (userWantsToStartGame())
-        {
-            System.out.println(wordCheck.getGivenAnswers() + "\n" + level + "\n" + score);
+        while (userWantsToStartGame()) {
             Countdown.startCountdown(gameForm);
             waitForGameToFinish();
             checkResultAndSaveIfFinished();
@@ -40,9 +38,26 @@ public class Main {
 
     private static void showRules() {
         int timeTotal = Countdown.getTimeTotal();
-        String rules = "Hi!\n The rules of the game are simple: you have to write as many words as you can within "
-                + timeTotal + " seconds.\n Your words have to begin with a certain letter(s).";
+        String rules = "Hi! \nThe rules of the game are simple: you have to write " +
+                "as many words as you can (and as long as you can) within " + timeTotal +
+                " seconds. \nYour words have to begin with a certain letter(s).\n\n";
+        rules = rules + getRequiredScoresForLevelPass();
         JOptionPane.showMessageDialog(gameForm.getJFrame(), rules);
+    }
+
+    private static String getRequiredScoresForLevelPass() {
+        int[] requiredScores = level.getRequiredScoreToPassLevel();
+        int[] pointsPerLetter = score.getPointsPerLetter();
+        StringBuilder s = new StringBuilder("You have to gain: \n");
+        for (int lvl=0; lvl<requiredScores.length; lvl++) {
+            s.append(requiredScores[lvl])
+                    .append(" points for level ")
+                    .append(lvl+1)
+                    .append(" (you earn ")
+                    .append(pointsPerLetter[lvl])
+                    .append(" per letter)\n");
+        }
+        return s.toString();
     }
 
     private static boolean userWantsToStartGame() {
@@ -66,18 +81,39 @@ public class Main {
     }
 
     private static void checkResultAndSaveIfFinished() {
-        if (level.gameIsFinished(score) || !level.levelPassed(score)) {
-            System.out.println("passed " + level.levelPassed(score) + "\n " + level.gameIsFinished(score));
-            topScore.saveCurrentScore();
-            ScoreWriter.writeScores(topScore);
-            startOver();
+        String message = "";
+        if (level.gameIsFinished(score)) {
+            gameFinished();
+            message = "Congrats!" + getResult();
+        }
+        if (!level.levelPassed(score)) {
+            gameFinished();
+            message = "You lose!" + getResult();
         }
         if (level.levelPassed(score)) {
-            level.levelUp();
-            gameForm.getTextArea().setText("");
-            gameForm.getAnswerInputField().setText("");
-            wordCheck = new WordCheck();
+            prepareForNextLevel();
+            message = "Cool! " + getResult();
         }
+        JOptionPane.showMessageDialog(gameForm.getJFrame(), message);
+    }
+
+    private static void gameFinished() {
+        topScore.saveCurrentScore();
+        ScoreWriter.writeScores(topScore);
+        startOver();
+    }
+
+    private static String getResult() {
+        int lvl = level.getCurrentLevel();
+        int requiredScore = level.getRequiredScoreToPassLevel()[lvl-1];
+        return "\n You got " + score + " out of " + requiredScore;
+    }
+
+    private static void prepareForNextLevel() {
+        level.levelUp();
+        gameForm.getTextArea().setText("");
+        gameForm.getAnswerInputField().setText("");
+        wordCheck = new WordCheck();
     }
 
     private static int generateLetterAndShowMenu() {

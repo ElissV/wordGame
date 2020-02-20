@@ -3,26 +3,30 @@ package com.example;
 public class Score {
 
     private int score;
-    private static final int[] pointsPerLetterForLevels;
+    private static final int[] POINTS_PER_LETTER;
 
     static {
-        pointsPerLetterForLevels = new int[]{50, 100, 200};
+        POINTS_PER_LETTER = new int[]{50, 100, 200};
     }
 
     Score() { score = 0; }
 
     private int calculateScore(String word) {
         int level = Main.getLevel();
-        return word.length() * pointsPerLetterForLevels[level-1];
+        return word.length() * POINTS_PER_LETTER[level-1];
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(score);
     }
 
     void setScore(String word) {
         score += calculateScore(word);
     }
 
-    @Override
-    public String toString() {
-        return String.valueOf(score);
+    int[] getPointsPerLetter() {
+        return POINTS_PER_LETTER;
     }
 
     int getScore() {

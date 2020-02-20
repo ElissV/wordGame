@@ -8,7 +8,7 @@ class Level {
 
     static {
         MAX_LEVEL = 3;
-        requiredScoreToPassALevel = new int[]{2000, 3000, 4500};
+        requiredScoreToPassALevel = new int[]{3000, 6000, 10000};
     }
 
     Level() {
@@ -35,6 +35,10 @@ class Level {
 
     int getCurrentLevel() {
         return currentLevel;
+    }
+
+    public int[] getRequiredScoreToPassLevel() {
+        return requiredScoreToPassALevel;
     }
 
     public int getMaxLevel() {
