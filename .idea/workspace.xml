@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="131dce44-fb31-493a-b135-471b096b3019" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scores.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/Countdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Countdown.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Score.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +38,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
+            <state relative-caret-position="1666">
               <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -105,8 +106,8 @@
       <file leaf-file-name="Score.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#550#551#0" expanded="true" />
                 <element signature="e#594#595#0" expanded="true" />
@@ -124,8 +125,8 @@
       <file leaf-file-name="Level.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#222#223#0" expanded="true" />
                 <element signature="e#253#254#0" expanded="true" />
@@ -147,8 +148,8 @@
       <file leaf-file-name="RandomLetterGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="357">
+              <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
               <folding>
                 <element signature="e#1008#1009#0" expanded="true" />
                 <element signature="e#1043#1044#0" expanded="true" />
@@ -218,15 +219,15 @@
         <option value="$PROJECT_DIR$/resources/scores.txt" />
         <option value="$PROJECT_DIR$/src/com/example/InputCheck.java" />
         <option value="$PROJECT_DIR$/src/com/example/gui/GameForm.java" />
-        <option value="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/example/TopScore.java" />
         <option value="$PROJECT_DIR$/src/com/example/ScoreReader.java" />
         <option value="$PROJECT_DIR$/src/com/example/ScoreWriter.java" />
         <option value="$PROJECT_DIR$/src/com/example/WordCheck.java" />
+        <option value="$PROJECT_DIR$/src/com/example/Main.java" />
         <option value="$PROJECT_DIR$/src/com/example/Score.java" />
+        <option value="$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/example/Countdown.java" />
         <option value="$PROJECT_DIR$/src/com/example/Level.java" />
-        <option value="$PROJECT_DIR$/src/com/example/Main.java" />
       </list>
     </option>
   </component>
@@ -385,12 +386,12 @@
       <workItem from="1582117726608" duration="15000" />
       <workItem from="1582122792263" duration="12738000" />
       <workItem from="1582144879411" duration="2961000" />
-      <workItem from="1582193782083" duration="13803000" />
+      <workItem from="1582193782083" duration="15098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214474000" />
+    <option name="totallyTimeSpent" value="215769000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,16 +706,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/resources/scores.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/WordCheck.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -729,13 +722,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/scores.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/com/example/RandomLetterGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+          <folding>
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/Score.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#550#551#0" expanded="true" />
             <element signature="e#594#595#0" expanded="true" />
@@ -761,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#222#223#0" expanded="true" />
             <element signature="e#253#254#0" expanded="true" />
@@ -782,7 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
+        <state relative-caret-position="1666">
           <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
           <folding>
             <element signature="imports" expanded="true" />

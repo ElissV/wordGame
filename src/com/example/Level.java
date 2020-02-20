@@ -7,8 +7,8 @@ class Level {
     private int currentLevel;
 
     static {
-        MAX_LEVEL = 3;
-        requiredScoreToPassALevel = new int[]{1000, 2000, 3000};
+        MAX_LEVEL = 4;
+        requiredScoreToPassALevel = new int[]{4000, 8000, 16000, 30000};
     }
 
     Level() {

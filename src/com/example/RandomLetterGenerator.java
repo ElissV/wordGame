@@ -1,12 +1,11 @@
 package com.example;
 
-import java.util.Arrays;
-
 class RandomLetterGenerator {
 
     private static final String[] letters;
     private static final String[] letterCombinationLvlTwo;
     private static final String[] letterCombinationLvlThree;
+    private static final String[] letterCombinationLvlFour;
     private static final String[][] lettersArrays;
     private String chosenLetter;
 
@@ -19,8 +18,11 @@ class RandomLetterGenerator {
         letterCombinationLvlThree = new String[]{"INT", "ACC", "DIS",
                 "IMP", "NUM", "MIN", "IRR", "INA", "QUE", "APP",
                 "ILL", "MIS", "SUB", "PRE"};
+        letterCombinationLvlFour = new String[]{"GENE", "DIST", "THRO",
+                "PRES", "DISG", "UNDE", "POST", "INTE", "ULTR"};
         lettersArrays = new String[][]{letters,
-                letterCombinationLvlTwo, letterCombinationLvlThree};
+                letterCombinationLvlTwo, letterCombinationLvlThree,
+                letterCombinationLvlFour};
     }
 
     String generateLetters(Level level) {

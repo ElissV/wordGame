@@ -6,7 +6,7 @@ public class Score {
     private static final int[] POINTS_PER_LETTER;
 
     static {
-        POINTS_PER_LETTER = new int[]{50, 100, 200};
+        POINTS_PER_LETTER = new int[]{50, 100, 200, 600};
     }
 
     Score() { score = 0; }
