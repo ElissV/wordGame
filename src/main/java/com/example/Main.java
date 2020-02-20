@@ -138,6 +138,11 @@ public class Main {
         gameForm.getAnswerInputField().setText("");
     }
 
+    static void showErrorTitleAndMessage(Exception e) {
+        JOptionPane.showMessageDialog(gameForm.getJFrame(), e.getMessage(),
+                String.valueOf(e.getCause()), JOptionPane.INFORMATION_MESSAGE);
+    }
+
     public static Score getScore() {
         return score;
     }

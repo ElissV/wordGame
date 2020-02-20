@@ -19,7 +19,7 @@ class RandomLetterGenerator {
                 "IMP", "NUM", "MIN", "IRR", "INA", "QUE", "APP",
                 "ILL", "MIS", "SUB", "PRE"};
         letterCombinationLvlFour = new String[]{"GENE", "DIST", "THRO",
-                "PRES", "DISG", "UNDE", "POST", "INTE", "ULTR"};
+                "PRES", "DISG", "UNDE", "INTE", "ULTR"};
         lettersArrays = new String[][]{letters,
                 letterCombinationLvlTwo, letterCombinationLvlThree,
                 letterCombinationLvlFour};
