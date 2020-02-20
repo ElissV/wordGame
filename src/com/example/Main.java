@@ -81,18 +81,18 @@ public class Main {
     }
 
     private static void checkResultAndSaveIfFinished() {
-        String message = "";
-        if (level.gameIsFinished(score)) {
-            gameFinished();
-            message = "Congrats!" + getResult();
-        }
-        if (!level.levelPassed(score)) {
-            gameFinished();
-            message = "You lose!" + getResult();
-        }
+        String message;
         if (level.levelPassed(score)) {
-            prepareForNextLevel();
-            message = "Cool! " + getResult();
+            if (level.gameIsFinished(score)) {
+                message = "You won!" + getResult() + "\nCongrats!";
+                gameFinished();
+            } else {
+                message = "Cool! " + getResult();
+                prepareForNextLevel();
+            }
+        } else {
+            message = "You lose!" + getResult();
+            gameFinished();
         }
         JOptionPane.showMessageDialog(gameForm.getJFrame(), message);
     }
