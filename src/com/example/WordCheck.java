@@ -29,9 +29,9 @@ public class WordCheck {
     }
 
     private boolean wordStartsWithRightChar(String word) {
-        char firstLetter = Character.toUpperCase(word.charAt(0));
-        char chosenChar = RandomLetterGenerator.getLetter();
-        return firstLetter == chosenChar;
+        String firstLetter = String.valueOf(word.charAt(0));
+        String chosenLetters = Main.getChosenLetters();
+        return firstLetter.equals(chosenLetters);
     }
 
     private boolean wordExists(String word) {

@@ -1,14 +1,17 @@
 package com.example;
 
+import java.util.Arrays;
+
 class RandomLetterGenerator {
 
-    private static final char[] letters;
+    private static final String[] letters;
     private static final String[] letterCombinationLvlTwo;
     private static final String[] letterCombinationLvlThree;
-    private char chosenLetter;
+    private String chosenLetter;
 
     static {
-        letters = "ABCDEFGHIJKLMNOPQRSTUVWYZ".toCharArray();
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWYZ";
+        letters = alphabet.split("");
         letterCombinationLvlTwo = new String[]{"FR", "AS", "FO", "NU",
                 "GO", "DI", "CO", "CL", "BL", "SE", "RO", "PR",
                 "DO", "AN", "RU", "TA", "MO", "EA", "OR", "GE"};
@@ -17,14 +20,14 @@ class RandomLetterGenerator {
                 "ILL", "MIS", "SUB", "PRE"};
     }
 
-    char generateLetter() {
+    String generateLetter() {
         int arrayLen = letters.length - 1;
         int randomNumber = (int) (Math.random() * arrayLen);
         chosenLetter = letters[randomNumber];
         return chosenLetter;
     }
 
-    char getLetter() {
+    String getLetter() {
         return chosenLetter;
     }
 

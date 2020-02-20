@@ -13,8 +13,8 @@ public class Main {
     private static Score score;
 
     static {
-        gameForm = new GameForm();
         letterGenerator = new RandomLetterGenerator();
+        gameForm = new GameForm();
         wordCheck = new WordCheck();
         score = new Score();
     }
@@ -65,8 +65,8 @@ public class Main {
     }
 
     private static int generateLetterAndShowMenu() {
-        char letter = letterGenerator.generateLetter();
-        String message = "Start the game? \nWords should start with " + letter;
+        String letters = letterGenerator.generateLetter();
+        String message = "Start the game? \nWords should start with " + letters;
         String[] options = {"Yes", "Change letter(s)", "Show scores", "No"};
         return JOptionPane.showOptionDialog(gameForm.getJFrame(), message, "Word Game",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
@@ -74,6 +74,10 @@ public class Main {
 
     private static void startOver() {
         score = new Score();
+        clearFields();
+    }
+
+    private static void clearFields() {
         gameForm.getScoreLabel().setText("Score: 0");
         gameForm.getTextArea().setText("");
         gameForm.getAnswerInputField().setText("");
@@ -85,5 +89,9 @@ public class Main {
 
     public static WordCheck getWordCheck() {
         return wordCheck;
+    }
+
+    static String getChosenLetters() {
+        return letterGenerator.getLetter();
     }
 }
