@@ -66,16 +66,17 @@ public class Main {
     }
 
     private static void checkResultAndSaveIfFinished() {
+        if (level.gameIsFinished(score) || !level.levelPassed(score)) {
+            System.out.println("passed " + level.levelPassed(score) + "\n " + level.gameIsFinished(score));
+            topScore.saveCurrentScore();
+            ScoreWriter.writeScores(topScore);
+            startOver();
+        }
         if (level.levelPassed(score)) {
             level.levelUp();
             gameForm.getTextArea().setText("");
             gameForm.getAnswerInputField().setText("");
             wordCheck = new WordCheck();
-        }
-        if (level.gameIsFinished(score) || !level.levelPassed(score)) {
-            topScore.saveCurrentScore();
-            ScoreWriter.writeScores(topScore);
-            startOver();
         }
     }
 

@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="131dce44-fb31-493a-b135-471b096b3019" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/WordCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/WordCheck.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+            <state relative-caret-position="244">
+              <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3142#3143#0" expanded="true" />
@@ -52,6 +50,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scores.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/scores.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="ScoreWriter.java" pinned="false" current-in-tab="false">
@@ -93,7 +96,7 @@
       <file leaf-file-name="Countdown.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Countdown.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="153">
               <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -119,16 +122,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Level.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <state relative-caret-position="374">
+              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
               <folding>
                 <element signature="e#222#223#0" expanded="true" />
                 <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
                 <element signature="e#667#668#0" expanded="true" />
                 <element signature="e#702#703#0" expanded="true" />
                 <element signature="e#744#745#0" expanded="true" />
@@ -213,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/com/example/GameLauncher.java" />
         <option value="$PROJECT_DIR$/src/com/example/FileReader.java" />
         <option value="$PROJECT_DIR$/src/com/example/FileWriter.java" />
-        <option value="$PROJECT_DIR$/src/com/example/Countdown.java" />
         <option value="$PROJECT_DIR$/resources/scores.txt" />
         <option value="$PROJECT_DIR$/src/com/example/InputCheck.java" />
         <option value="$PROJECT_DIR$/src/com/example/gui/GameForm.java" />
@@ -222,9 +224,10 @@
         <option value="$PROJECT_DIR$/src/com/example/ScoreReader.java" />
         <option value="$PROJECT_DIR$/src/com/example/ScoreWriter.java" />
         <option value="$PROJECT_DIR$/src/com/example/Score.java" />
-        <option value="$PROJECT_DIR$/src/com/example/Level.java" />
         <option value="$PROJECT_DIR$/src/com/example/WordCheck.java" />
         <option value="$PROJECT_DIR$/src/com/example/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/example/Countdown.java" />
+        <option value="$PROJECT_DIR$/src/com/example/Level.java" />
       </list>
     </option>
   </component>
@@ -383,12 +386,12 @@
       <workItem from="1582117726608" duration="15000" />
       <workItem from="1582122792263" duration="12738000" />
       <workItem from="1582144879411" duration="2961000" />
-      <workItem from="1582193782083" duration="7921000" />
+      <workItem from="1582193782083" duration="9550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208592000" />
+    <option name="totallyTimeSpent" value="210221000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,7 +416,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3295302" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.36609685" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.36609685" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32905984" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -662,20 +665,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/GameLauncher.java" />
-    <entry file="file://$PROJECT_DIR$/resources/scores.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/InputCheck.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/example/Countdown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/gui/GameForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -742,27 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/WordCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -776,10 +745,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/scores.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        <state relative-caret-position="244">
+          <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3142#3143#0" expanded="true" />
@@ -790,6 +762,37 @@
             <element signature="e#3248#3249#0" expanded="true" />
             <element signature="e#3288#3289#0" expanded="true" />
             <element signature="e#3338#3339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/Countdown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+          <folding>
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
           </folding>
         </state>
       </provider>
