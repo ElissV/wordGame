@@ -8,19 +8,21 @@ public class Main {
 
     private static GameForm gameForm;
     private static RandomLetterGenerator letterGenerator;
+    private static TopScore topScore;
     private static WordCheck wordCheck;
     private static Level level;
     private static Score score;
 
     static {
-        letterGenerator = new RandomLetterGenerator();
         gameForm = new GameForm();
-        wordCheck = new WordCheck();
+        letterGenerator = new RandomLetterGenerator();
+        level = new Level();
         score = new Score();
+        wordCheck = new WordCheck();
     }
 
     public static void main(String[] args) {
-        ScoreReader.addPreviousScoresToList();
+        topScore = ScoreReader.addPreviousScoresToList();
         startGame();
     }
 
@@ -31,8 +33,7 @@ public class Main {
             startOver();
             Countdown.startCountdown(gameForm);
             waitForGameToFinish();
-            new TopScore().saveCurrentScore();
-            ScoreWriter.writeScores();
+            checkResultAndSaveIfFinished();
         }
         System.exit(0);
     }
@@ -42,16 +43,6 @@ public class Main {
         String rules = "Hi!\n The rules of the game are simple: you have to write as many words as you can within "
                 + timeTotal + " seconds.\n Your words have to begin with a certain letter(s).";
         JOptionPane.showMessageDialog(gameForm.getJFrame(), rules);
-    }
-
-    private static void waitForGameToFinish() {
-        int timeToWait = Countdown.getTimeTotal() * 1000;
-        try {
-            Thread.sleep(timeToWait);
-        } catch (InterruptedException e) {
-            JOptionPane.showMessageDialog(gameForm.getJFrame(), e,
-                    "Error occurred", JOptionPane.INFORMATION_MESSAGE);
-        }
     }
 
     private static boolean userWantsToStartGame() {
@@ -64,9 +55,30 @@ public class Main {
         return choice == 0;
     }
 
+    private static void waitForGameToFinish() {
+        int timeToWait = Countdown.getTimeTotal() * 1000;
+        try {
+            Thread.sleep(timeToWait);
+        } catch (InterruptedException e) {
+            JOptionPane.showMessageDialog(gameForm.getJFrame(), e,
+                    "Error occurred", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+
+    private static void checkResultAndSaveIfFinished() {
+        if (level.levelPassed(score)) {
+            level.levelUp();
+        }
+        if (level.gameIsFinished(score) || !level.levelPassed(score)) {
+            topScore.saveCurrentScore();
+            ScoreWriter.writeScores(topScore);
+        }
+    }
+
     private static int generateLetterAndShowMenu() {
-        String letters = letterGenerator.generateLetter();
-        String message = "Start the game? \nWords should start with " + letters;
+        String letters = letterGenerator.generateLetters(level);
+        String message = "Level " + level +
+                "\nStart the game? Words should start with " + letters;
         String[] options = {"Yes", "Change letter(s)", "Show scores", "No"};
         return JOptionPane.showOptionDialog(gameForm.getJFrame(), message, "Word Game",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);

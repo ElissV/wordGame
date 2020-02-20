@@ -4,7 +4,7 @@ class Level {
 
     private final static int MAX_LEVEL;
     private final static int[] requiredScoreToPassALevel;
-    private static int currentLevel;
+    private int currentLevel;
 
     static {
         MAX_LEVEL = 3;
@@ -24,11 +24,20 @@ class Level {
         return currentLevelIsFinal && levelPassed(score);
     }
 
-    public static int getCurrentLevel() {
+    @Override
+    public String toString() {
+        return String.valueOf(currentLevel);
+    }
+
+    void levelUp() {
+        currentLevel++;
+    }
+
+    int getCurrentLevel() {
         return currentLevel;
     }
 
-    public static int getMaxLevel() {
+    public int getMaxLevel() {
         return MAX_LEVEL;
     }
 }

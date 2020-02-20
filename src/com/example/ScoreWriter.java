@@ -15,8 +15,8 @@ class ScoreWriter {
         file = new File(filePath);
     }
 
-    static void writeScores() {
-        List<Integer> topScores = new TopScore().getTopScores();
+    static void writeScores(TopScore topScore) {
+        List<Integer> topScores = topScore.getTopScores();
         try (Writer writer = new FileWriter(file, false)) {
             for (int i : topScores) {
                 writer.write(String.valueOf(i + "/"));

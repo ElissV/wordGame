@@ -21,7 +21,8 @@ class TopScore {
             if (topScores.size() > i) currentScore = String.valueOf(topScores.get(i));
             scores = scores.concat(i+1 + ". " + currentScore + "\n");
         }
-        JOptionPane.showMessageDialog(gameForm.getJFrame(), scores, "Scores", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(gameForm.getJFrame(),
+                scores, "Scores", JOptionPane.INFORMATION_MESSAGE);
     }
 
     void saveCurrentScore() {

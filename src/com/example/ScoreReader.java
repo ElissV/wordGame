@@ -14,15 +14,17 @@ class ScoreReader {
         filePath = "resources/scores.txt";
     }
 
-    static void addPreviousScoresToList() {
+    static TopScore addPreviousScoresToList() {
         String fileContains = readFile();
         if (fileContains != null) {
             String[] strings = fileContains.split("/");
             for (String s : strings) {
                 TopScore topScore = new TopScore();
                 topScore.getTopScores().add(Integer.parseInt(s));
+                return topScore;
             }
         }
+        return null;
     }
 
     private static String readFile() {

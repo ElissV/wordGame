@@ -29,7 +29,7 @@ public class WordCheck {
     }
 
     private boolean wordStartsWithRightChar(String word) {
-        String firstLetter = String.valueOf(word.charAt(0));
+        String firstLetter = String.valueOf(word.charAt(0)).toUpperCase();
         String chosenLetters = Main.getChosenLetters();
         return firstLetter.equals(chosenLetters);
     }
