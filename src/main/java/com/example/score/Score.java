@@ -1,4 +1,6 @@
-package com.example;
+package com.example.score;
+
+import com.example.Main;
 
 public class Score {
 
@@ -9,7 +11,9 @@ public class Score {
         POINTS_PER_LETTER = new int[]{50, 100, 200, 600};
     }
 
-    Score() { score = 0; }
+    public Score() {
+        score = 0;
+    }
 
     private int calculateScore(String word) {
         int level = Main.getLevel();
@@ -21,15 +25,15 @@ public class Score {
         return String.valueOf(score);
     }
 
-    void setScore(String word) {
+    public void setScore(String word) {
         score += calculateScore(word);
     }
 
-    int[] getPointsPerLetter() {
+    public int[] getPointsPerLetter() {
         return POINTS_PER_LETTER;
     }
 
-    int getScore() {
+    public int getScore() {
         return score;
     }
 

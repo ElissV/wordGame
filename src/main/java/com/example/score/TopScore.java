@@ -1,4 +1,4 @@
-package com.example;
+package com.example.score;
 
 import com.example.gui.GameForm;
 
@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class TopScore {
+public class TopScore {
 
     private static ArrayList<Integer> topScores;
 
@@ -14,7 +14,7 @@ class TopScore {
         topScores = new ArrayList<>(6);
     }
 
-    static void showScores(GameForm gameForm) {
+    public static void showScores(GameForm gameForm) {
         String scores = "";
         for (int i = 0; i < 5; i++) {
             String currentScore = "0";
@@ -25,7 +25,7 @@ class TopScore {
                 scores, "Scores", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    void saveCurrentScore(int currentScore) {
+    public void saveCurrentScore(int currentScore) {
         if (currentScore != 0) {
             topScores.add(currentScore);
             Collections.sort(topScores);
@@ -35,10 +35,9 @@ class TopScore {
                 topScores.remove(lastElementIndex);
             }
         }
-        System.out.println(topScores);
     }
 
-    ArrayList<Integer> getTopScores() {
+    public ArrayList<Integer> getTopScores() {
         return topScores;
     }
 

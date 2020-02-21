@@ -1,4 +1,7 @@
-package com.example;
+package com.example.file;
+
+import com.example.Main;
+import com.example.score.TopScore;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -6,7 +9,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.List;
 
-class ScoreWriter {
+public class ScoresFileWriter {
 
     private static final File file;
 
@@ -15,7 +18,7 @@ class ScoreWriter {
         file = new File(filePath);
     }
 
-    static void writeScores(TopScore topScore) {
+    public static void writeScores(TopScore topScore) {
         List<Integer> topScores = topScore.getTopScores();
         try (Writer writer = new FileWriter(file, false)) {
             for (int i : topScores) {

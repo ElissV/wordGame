@@ -1,5 +1,7 @@
 package com.example;
 
+import com.example.score.Score;
+
 class Level {
 
     private final static int MAX_LEVEL;

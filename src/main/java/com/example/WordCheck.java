@@ -1,5 +1,7 @@
 package com.example;
 
+import com.example.score.Score;
+
 import java.util.ArrayList;
 import java.util.List;
 

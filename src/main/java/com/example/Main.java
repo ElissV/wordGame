@@ -1,6 +1,10 @@
 package com.example;
 
+import com.example.file.ScoresFileReader;
+import com.example.file.ScoresFileWriter;
 import com.example.gui.GameForm;
+import com.example.score.Score;
+import com.example.score.TopScore;
 
 import javax.swing.*;
 
@@ -22,7 +26,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        topScore = ScoreReader.addPreviousScoresToList();
+        topScore = ScoresFileReader.addPreviousScoresToList();
         startGame();
     }
 
@@ -99,7 +103,7 @@ public class Main {
 
     private static void gameFinished() {
         topScore.saveCurrentScore(score.getScore());
-        ScoreWriter.writeScores(topScore);
+        ScoresFileWriter.writeScores(topScore);
         startOver();
     }
 
@@ -138,7 +142,7 @@ public class Main {
         gameForm.getAnswerInputField().setText("");
     }
 
-    static void showErrorTitleAndMessage(Exception e) {
+    public static void showErrorTitleAndMessage(Exception e) {
         JOptionPane.showMessageDialog(gameForm.getJFrame(), e.getMessage(),
                 String.valueOf(e.getCause()), JOptionPane.INFORMATION_MESSAGE);
     }
@@ -147,7 +151,7 @@ public class Main {
         return score;
     }
 
-    static int getLevel() {
+    public static int getLevel() {
         return level.getCurrentLevel();
     }
 

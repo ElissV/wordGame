@@ -1,11 +1,13 @@
-package com.example;
+package com.example.file;
+
+import com.example.score.TopScore;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-class ScoreReader {
+public class ScoresFileReader {
 
     private static final String filePath;
 
@@ -13,7 +15,7 @@ class ScoreReader {
         filePath = "resources/scores.txt";
     }
 
-    static TopScore addPreviousScoresToList() {
+    public static TopScore addPreviousScoresToList() {
         TopScore topScore = new TopScore();
         String fileContains = readFile();
         if (fileContains != null) {
