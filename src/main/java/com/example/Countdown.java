@@ -7,7 +7,7 @@ import java.util.TimerTask;
 
 class Countdown {
 
-    private final static int TIMETOTAL = 60;
+    private final static int TIMETOTAL = 20;
     private static int timeLeft;
 
     static void startCountdown(GameForm gameForm) {

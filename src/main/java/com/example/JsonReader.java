@@ -17,7 +17,7 @@ class JsonReader {
         HttpURLConnection connection = establishConnection(word);
         if (connectionSuccess(connection)) {
             String allInput = readWebPageContent(connection);
-            return read(allInput);
+            return parseToJsonArrayAndGetValue(allInput);
         }
         return false;
     }
@@ -51,8 +51,7 @@ class JsonReader {
         BufferedReader br;
         StringBuilder allLines = null;
         try {
-            br = new BufferedReader(new InputStreamReader(
-                    (connection.getInputStream())));
+            br = new BufferedReader(new InputStreamReader((connection.getInputStream())));
             allLines = new StringBuilder();
             String line;
             while ((line = br.readLine()) != null) {
@@ -61,10 +60,11 @@ class JsonReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        if (allLines == null) return null;
         return allLines.toString();
     }
 
-    private static boolean read(String allInput) {
+    private static boolean parseToJsonArrayAndGetValue(String allInput) {
         Object obj = parseToObject(allInput);
         JSONObject jsonObject = (JSONObject) obj;
         String value = null;
@@ -89,10 +89,8 @@ class JsonReader {
 
     private static String getValue(JSONArray jsonArray) {
         JSONObject jsonObject = null;
-        try {
-            jsonObject = (JSONObject) jsonArray.get(1);
-        } catch (IndexOutOfBoundsException ignored) {
-        }
+        if (!jsonArray.isEmpty())
+            jsonObject = (JSONObject) jsonArray.get(0);
         if (jsonObject != null) {
             return (String) jsonObject.get("pos");
         }

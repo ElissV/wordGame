@@ -19,7 +19,7 @@ class RandomLetterGenerator {
                 "IMP", "NUM", "MIN", "IRR", "INA", "QUE", "APP",
                 "ILL", "MIS", "SUB", "PRE"};
         letterCombinationLvlFour = new String[]{"GENE", "DIST", "THRO",
-                "PRES", "DISG", "UNDE", "INTE", "ULTR"};
+                "PRES", "DISG", "UNDE", "INTE", "ULTR", "DISP"};
         lettersArrays = new String[][]{letters,
                 letterCombinationLvlTwo, letterCombinationLvlThree,
                 letterCombinationLvlFour};
@@ -27,8 +27,8 @@ class RandomLetterGenerator {
 
     String generateLetters(Level level) {
         int currentLevel = level.getCurrentLevel() - 1;
-        int arrayLen = lettersArrays[currentLevel].length - 1;
-        int randomNumber = (int) (Math.random() * arrayLen);
+        int arrayLen = lettersArrays[currentLevel].length;
+        int randomNumber = (int) (Math.random() * arrayLen-1);
         chosenLetter = lettersArrays[currentLevel][randomNumber];
         return chosenLetter;
     }

@@ -25,19 +25,17 @@ class TopScore {
                 scores, "Scores", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    void saveCurrentScore() {
-        int currentScore = new Score().getScore();
-        if (currentScore == 0) {
-            topScores.add(currentScore);
-        } else {
+    void saveCurrentScore(int currentScore) {
+        if (currentScore != 0) {
             topScores.add(currentScore);
             Collections.sort(topScores);
             Collections.reverse(topScores);
             int lastElementIndex = topScores.size() - 1;
-            if (5 < lastElementIndex) {
+            if (5 <= lastElementIndex) {
                 topScores.remove(lastElementIndex);
             }
         }
+        System.out.println(topScores);
     }
 
     ArrayList<Integer> getTopScores() {

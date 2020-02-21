@@ -98,7 +98,7 @@ public class Main {
     }
 
     private static void gameFinished() {
-        topScore.saveCurrentScore();
+        topScore.saveCurrentScore(score.getScore());
         ScoreWriter.writeScores(topScore);
         startOver();
     }

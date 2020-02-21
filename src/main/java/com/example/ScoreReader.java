@@ -1,6 +1,5 @@
 package com.example;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -15,16 +14,15 @@ class ScoreReader {
     }
 
     static TopScore addPreviousScoresToList() {
+        TopScore topScore = new TopScore();
         String fileContains = readFile();
         if (fileContains != null) {
             String[] strings = fileContains.split("/");
             for (String s : strings) {
-                TopScore topScore = new TopScore();
                 topScore.getTopScores().add(Integer.parseInt(s));
-                return topScore;
             }
         }
-        return null;
+        return topScore;
     }
 
     private static String readFile() {

@@ -22,7 +22,7 @@ class ScoreWriter {
                 writer.write(String.valueOf(i + "/"));
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            Main.showErrorTitleAndMessage(e);
         }
     }
 
