@@ -36,7 +36,4 @@ public class WordCheck {
         return word.substring(0, level).toUpperCase();
     }
 
-    public List<String> getGivenAnswers() {
-        return givenAnswers;
-    }
 }

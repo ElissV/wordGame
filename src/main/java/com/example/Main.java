@@ -92,7 +92,7 @@ public class Main {
             }
         } else {
             message = "You lose!" + getResult();
-            gameFinished();
+            startOver();
         }
         JOptionPane.showMessageDialog(gameForm.getJFrame(), message);
     }
@@ -122,7 +122,7 @@ public class Main {
                 "\nStart the game? Words should start with " + letters;
         String[] options = {"Yes", "Change letter(s)", "Show scores", "No"};
         return JOptionPane.showOptionDialog(gameForm.getJFrame(), message, "Word Game",
-                JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
     }
 
     private static void startOver() {
